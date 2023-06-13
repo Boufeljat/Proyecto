@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario de Compra</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300i,400,400i,500,600,700,800" rel="stylesheet">		
+    <link href="./css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="./fonts/font-awesome.min.css" rel="stylesheet"/>
+    <link href="./fonts/themify-icons.css" rel="stylesheet"/>
+    <link rel="icon" href="./images/favicon.jpg"/>
+    <link href="./css/style.css" rel="stylesheet"/>
+</head>
+<body>
+    <section id="contact" class="section_padding">				
+        <div class="container">
+            <div class="section_heading text-center wow zoomIn">
+                <h2>Formulario de<span> Compra</span></h2>
+            
+                <div class="section_heading_border">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="row">						
+                <div class="col-md-12 col-sm-12">
+                    <form class="form" name="enq" method="post" action="http://www.iesjacaranda-brenes.org/lmsgi/resultado.php" onsubmit="return validation();">
+                        <div class="row">
+                            <div class="input_padding text-center">
+                                <div class="form-group col-sm-12">
+                                    <input type="text" name="name" class="form-control" placeholder="Nombre completo" required="required">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <input type="email" name="email" class="form-control" placeholder="Correo electrónico" required="required">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <input type="tel" name="telefono" class="form-control" placeholder="Teléfono" required="required">
+                                </div>
+                                <label for="plan">Plan a comprar:</label>
+                                <select id="plan" name="plan" required>
+                                    <option value="">Seleccione un plan</option>
+                                    <option value="Plan Plata">Plan Plata - 10€ por Mes</option>
+                                    <option value="Plan Oro">Plan Oro - 20€ por Mes</option>
+                                    <option value="Plan Diamante">Plan Diamante - 30€ por Mes</option>
+                                </select>
+                                <div class="form-group col-sm-12 mab-none">
+                                    <textarea rows="6" name="message" class="form-control" placeholder="Mensaje" required="required"></textarea>
+                                </div>
+                                <div class="form-group mb0 col-sm-12">
+                                    <div class="actions">
+                                        <button type="submit" value="Enviar Mensaje" name="submit" id="submitButton" class="btn btn-default contact_btn" title="Submit Your Message!">Comprar Ahora</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>						
+            </div>
+        </div>
+    </section>
+</body>
+</html>
